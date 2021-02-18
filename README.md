@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Math Magicians calculator
 
-## Available Scripts
+A browser calculator built for the Math Magicians Company.
 
-In the project directory, you can run:
+[![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/vanheaven-ui/React-calc/issues)
+[![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/vanheaven-ui/React-calc/pulls)
+![Linters](https://img.shields.io/badge/Linters-Passing-success)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Application Screenshot
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Screenshot]() ## To Be Added
 
-### `npm test`
+## Content
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a text-align="center" href="#about">Background</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#ins">Installations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#usage">Usage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#app">App</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#with">Building</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#tests">Testing</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+<a href="#author">Author</a>
 
-### `npm run build`
+## Background <a name = "about"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for Math Magicians company.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Live Game Demo
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The built app is hosted on Heroku <br />
 
-### `npm run eject`
+### You may see the demo version [here]()
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 🔧 Building<a name = "with"></a>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The tools used to build the calculator are listed below:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Javascript(ES6).
+- React
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### TO Be COMPLETED
 
-## Learn More
+## Usage <a name = "usage"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To use the code in this repository, follow the steps in this section:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 🔨 Prerequisites
 
-### Code Splitting
+You should have the following packages installed on your computer inorder to run the code contained herein.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Node JS
+- npm and npx
 
-### Analyzing the Bundle Size
+### 🔨 Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+First get a copy of the project on your computer:
 
-### Making a Progressive Web App
+- Clone or download the repository to a local directory on your computer by following the Github instructions at [Github clone/download repository](https://docs.github.com/en/enterprise/2.13/user/articles/cloning-a-repository).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 🛠 Installing <a name = "ins"></a>
 
-### Advanced Configuration
+Once you have a local copy of the entire project on your computer,
+If you don't meet the above prerequisites, then:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Visit [node download and installations docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install node js and npm.
+- Run `npm install` to install the project dependencies in the package.json file.
 
-### Deployment
+### Testing <a name = "tests"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Jest was used to test the code contained herein.
+To run the tests written in this project, then:
 
-### `npm run build` fails to minify
+- Type/copy `npm run test` into the terminal and strike `Enter`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### App <a name = "app"></a>
+
+With the installations above complete, you are set to use the code and locally run the HTML 5 RPG built in this repository. Follow these simple steps:
+
+- Change directory into the directory where you cloned the repository.
+- Open the project directory in your editor of choice. For example running `code .` will open the project in VSCode.
+- Run `npm start` to start webpack-dev-server.
+- If everything worked well, the browser should automatically render the HTML 5 RPG on localhost:8080.
+
+## ✒️ Author <a name = "author"></a>
+
+👤 **Mworekwa Ezekiel**
+
+- Github: [@vanheaven-ui](https://github.com/vanheaven-ui)
+- Twitter: [@MworekwaE](https://twitter.com/MworekwaE)
+- Linkedin: [@linkedin](https://www.linkedin.com/in/vanheaven/)
+- Email: [ezekiel](mailto:vanheaven6@gmail.com)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+- To create an issue, visit the [issues page](https://github.com/vanheaven-ui/React-calc/issues) and create a new issue.
+- To contribute to the code base, follow the steps below:
+  1. Fork this repository to your remote respository by clicking the Fork button in this repository.
+  2. Clone this repository to a directory on your computer by following Github guidelines.
+  3. Change directory into the directory where you cloned this repository to.
+  4. Open the directory using your favorite editor.
+  5. Create a feature branch off the develop branch.
+  6. Make and commit the nuanced code.
+  7. Open a pull request describing the improvements made
+     And your reward awaits in heaven.
+
+## 👍 Show your support
+
+Give a ⭐️ if you like this project!
+
+## :clap: Acknowledgements
+
+- [Microverse Community](https://www.microverse.org/) <br />
+- [The Microverse Specifications](https://microverse.pathwright.com/library/react-redux-v10/188148/path/step/107676522/) <br />
+- [React Official Documentation](https://reactjs.org/)
