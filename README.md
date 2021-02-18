@@ -32,7 +32,7 @@ This project was a task by [Microverse Inc.](https://www.microverse.org/) to bui
 
 The built app is hosted on Heroku <br />
 
-### You may see the demo version [here]()
+### You may see the demo version [here](https://dashboard.heroku.com/apps/peaceful-lake-84379)
 
 ## 🔧 Building<a name = "with"></a>
 
