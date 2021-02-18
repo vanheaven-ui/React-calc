@@ -12,7 +12,7 @@ A browser calculator built for the Math Magicians Company.
 
 ## Application Screenshot
 
-![Screenshot]() ## To Be Added
+![Screenshot](screenshot/screenshot.png)
 
 ## Content
 
