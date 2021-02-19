@@ -17,7 +17,6 @@ body {
 button {
   text-align: center;
   cursor: pointer;
-  width: 25%;
   font-size: 32px;
   border: none;
 }
@@ -34,10 +33,6 @@ button {
   background-color: #858693;
 }
 
-.btn-panel {
-  background-color: #e0e0e0;
-}
-
 /* .btn-group {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -50,16 +45,31 @@ button {
   height: 100px;
 }
 
-.btn-group:last-child button:nth-child(1) {
-  flex-grow: 1;
-}
-
 .btn-group button:last-child {
-  background-color: #f5913e;
   border-bottom: 1px solid #d2d2d2;
 }
 
 .btn-group button:not(:last-child) {
   border-bottom: 1px solid #bababa;
   border-right: 1px solid #d1d1d1;
+}
+
+/* .btn-group:last-child button:nth-child(1) {
+  flex-grow: 1;
+} */
+
+.default-btn-color {
+  background-color: #f5913e;
+}
+
+.grey-btn {
+  background-color: #e0e0e0;
+}
+
+.double-width-btn {
+  width: 50%;
+}
+
+.default-btn-width {
+  width: 25%;
 }
