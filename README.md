@@ -1,6 +1,6 @@
 <div align="center">
 
-# Math Magicians calculator
+# Math Magicians Calculator
 
 A browser calculator built for the Math Magicians Company.
 
