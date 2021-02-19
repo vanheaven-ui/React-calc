@@ -2,7 +2,11 @@ import Button from './Button';
 
 const ButtonPanel = () => {
   const renderButton = name => (
-    <Button ButtonName={name} />
+    <Button
+      ButtonName={name}
+      color={['÷', 'x', '-', '+', '='].includes(name) ? 'default-btn-color' : 'grey-btn'}
+      wide={name === '0'}
+    />
   );
   return (
     <div className="btn-panel">
@@ -10,13 +14,13 @@ const ButtonPanel = () => {
         { renderButton('AC')}
         { renderButton('+/-')}
         { renderButton('%')}
-        { renderButton('/')}
+        { renderButton('÷')}
       </div>
       <div className="btn-group">
         { renderButton('7')}
         { renderButton('8')}
         { renderButton('9')}
-        { renderButton('X')}
+        { renderButton('x')}
       </div>
       <div className="btn-group">
         { renderButton('4')}
