@@ -1,6 +1,6 @@
 <div align="center">
 
-# Math Magicians Calculator
+# Math Magicians calculator
 
 A browser calculator built for the Math Magicians Company.
 
@@ -26,9 +26,11 @@ A browser calculator built for the Math Magicians Company.
 
 ## Background <a name = "about"></a>
 
-This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for Math Magicians company.
+This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for the Math Magicians company. The Project development was completed through the milestones below in order of execution:
+1. Project setup - This involved setting up the necessary dependencies.
+2. Build basic React user interface - This involved implementing the project React components.
 
-## Live Calculator Demo
+## Live Game Demo
 
 The built app is hosted on Heroku <br />
 
@@ -40,8 +42,9 @@ The tools used to build the calculator are listed below:
 
 - Javascript(ES6).
 - React
-
-### TO Be COMPLETED
+- prop-types node module
+- eslint
+- stylelint
 
 ## Usage <a name = "usage"></a>
 
@@ -62,10 +65,10 @@ First get a copy of the project on your computer:
 
 ### 🛠 Installing <a name = "ins"></a>
 
-Once you have a local copy of the entire project on your computer,
-If you don't meet the above prerequisites, then:
+Once you have a local copy of the entire project on your computer, then:
 
-- Visit [node download and installations docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install node js and npm.
+
+- If you don't meet the above prerequisites, visit [node download and installations docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install node js and npm.
 - Run `npm install` to install the project dependencies in the package.json file.
 
 ### Testing <a name = "tests"></a>
@@ -77,12 +80,12 @@ To run the tests written in this project, then:
 
 ### App <a name = "app"></a>
 
-With the installations above complete, you are set to use the code and locally run the HTML 5 RPG built in this repository. Follow these simple steps:
+With the installations above complete, you are set to locally use the code. Follow these simple steps:
 
 - Change directory into the directory where you cloned the repository.
 - Open the project directory in your editor of choice. For example running `code .` will open the project in VSCode.
 - Run `npm start` to start webpack-dev-server.
-- If everything worked well, the browser should automatically render the HTML 5 RPG on localhost:8080.
+- If everything worked well, the browser should automatically render the calculator on `http://localhost:3000/`.
 
 ## ✒️ Author <a name = "author"></a>
 
@@ -115,5 +118,4 @@ Give a ⭐️ if you like this project!
 ## :clap: Acknowledgements
 
 - [Microverse Community](https://www.microverse.org/) <br />
-- [The Microverse Specifications](https://microverse.pathwright.com/library/react-redux-v10/188148/path/step/107676522/) <br />
 - [React Official Documentation](https://reactjs.org/)
