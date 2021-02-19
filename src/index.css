@@ -7,10 +7,46 @@
   font-family: "Permanent Marker", cursive;
 }
 
-.App {
-  width: 992px;
-  margin: 0 auto;
-  margin-top: 50px;
-  border: 3px solid red;
-  padding: 20px;
+body {
+  min-height: 100vh;
+}
+
+#root {
+  width: 700px;
+  border: 3px solid grey;
+}
+
+button {
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  font-size: 32px;
+}
+
+.display-window {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  height: 100px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 48px;
+  background-color: #858693;
+}
+
+/* .btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100px;
+} */
+
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+}
+
+.btn-group:last-child button:nth-child(1) {
+  flex-grow: 1;
 }
