@@ -1,6 +1,6 @@
 <div align="center">
 
-# Math Magicians calculator
+# Math Magicians Calculator
 
 A browser calculator built for the Math Magicians Company.
 
@@ -28,7 +28,7 @@ A browser calculator built for the Math Magicians Company.
 
 This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for Math Magicians company.
 
-## Live Game Demo
+## Live Calculator Demo
 
 The built app is hosted on Heroku <br />
 

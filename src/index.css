@@ -4,13 +4,72 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Permanent Marker", cursive;
 }
 
-.App {
-  width: 992px;
-  margin: 0 auto;
-  margin-top: 50px;
-  border: 3px solid red;
-  padding: 20px;
+body {
+  min-height: 100vh;
+}
+
+#root {
+  width: 700px;
+}
+
+button {
+  text-align: center;
+  cursor: pointer;
+  font-size: 32px;
+  border: none;
+}
+
+.display-window {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  height: 100px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 48px;
+  background-color: #858693;
+}
+
+/* .btn-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100px;
+} */
+
+.btn-group {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+}
+
+.btn-group button:last-child {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: 1px solid #bababa;
+  border-right: 1px solid #d1d1d1;
+}
+
+/* .btn-group:last-child button:nth-child(1) {
+  flex-grow: 1;
+} */
+
+.default-btn-color {
+  background-color: #f5913e;
+}
+
+.grey-btn {
+  background-color: #e0e0e0;
+}
+
+.double-width-btn {
+  width: 50%;
+}
+
+.default-btn-width {
+  width: 25%;
 }
