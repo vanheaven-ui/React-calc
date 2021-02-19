@@ -26,9 +26,9 @@ A browser calculator built for the Math Magicians Company.
 
 ## Background <a name = "about"></a>
 
-This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for Math Magicians company. The Project development was completed through the milestones below in order of execution:
+This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for the Math Magicians company. The Project development was completed through the milestones below in order of execution:
 1. Project setup - This involved setting up the necessary dependencies.
-2. Build Basic React UI - This involved the project React components.
+2. Build basic React user interface - This involved implementing the project React components.
 
 ## Live Game Demo
 
@@ -68,7 +68,7 @@ First get a copy of the project on your computer:
 Once you have a local copy of the entire project on your computer, then:
 
 
-- If you don't meet the above prerequisites, Visit [node download and installations docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install node js and npm.
+- If you don't meet the above prerequisites, visit [node download and installations docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install node js and npm.
 - Run `npm install` to install the project dependencies in the package.json file.
 
 ### Testing <a name = "tests"></a>
@@ -118,5 +118,4 @@ Give a ⭐️ if you like this project!
 ## :clap: Acknowledgements
 
 - [Microverse Community](https://www.microverse.org/) <br />
-- [The Microverse Specifications](https://microverse.pathwright.com/library/react-redux-v10/188148/path/step/107676522/) <br />
 - [React Official Documentation](https://reactjs.org/)
