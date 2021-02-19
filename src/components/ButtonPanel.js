@@ -4,7 +4,7 @@ const ButtonPanel = () => {
   const renderButton = name => (
     <Button
       ButtonName={name}
-      color={[['+', '-', 'X', '/', '='].includes(name) ? 'default-btn-color' : 'grey-btn']}
+      color={['+', '-', 'X', '/', '='].includes(name) ? 'default-btn-color' : 'grey-btn'}
       wide={name === '0'}
     />
   );
