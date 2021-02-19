@@ -1,8 +1,10 @@
-import logo from "./logo.svg";
-import "./App.css";
-
 function App() {
-  return <div className="App"></div>;
+  const myText = 'I have completed the project setup. Time to get building... Well I should remember to lint the code.';
+  return (
+    <div className="App" style={{ color: 'red', fontSize: 64 }}>
+      {myText}
+    </div>
+  );
 }
 
 export default App;
