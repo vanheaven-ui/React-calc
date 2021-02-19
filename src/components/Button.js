@@ -10,11 +10,15 @@ const Button = ({ ButtonName, color, wide }) => (
 );
 
 Button.defaultProps = {
-  ButtonName: '--',
+  ButtonName: ' ',
+  color: '#f5913e',
+  wide: false,
 };
 
 Button.propTypes = {
   ButtonName: PropTypes.string,
+  color: PropTypes.string,
+  wide: PropTypes.bool,
 };
 
 export default Button;
