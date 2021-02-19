@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Permanent Marker", cursive;
 }
 
 body {
@@ -13,7 +12,6 @@ body {
 
 #root {
   width: 700px;
-  border: 3px solid grey;
 }
 
 button {
@@ -21,6 +19,7 @@ button {
   cursor: pointer;
   width: 25%;
   font-size: 32px;
+  border: none;
 }
 
 .display-window {
@@ -33,6 +32,10 @@ button {
   color: #fff;
   font-size: 48px;
   background-color: #858693;
+}
+
+.btn-panel {
+  background-color: #e0e0e0;
 }
 
 /* .btn-group {
@@ -49,4 +52,14 @@ button {
 
 .btn-group:last-child button:nth-child(1) {
   flex-grow: 1;
+}
+
+.btn-group button:last-child {
+  background-color: #f5913e;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: 1px solid #bababa;
+  border-right: 1px solid #d1d1d1;
 }
