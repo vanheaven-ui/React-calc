@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 
 const Display = ({ output }) => (
   <div className="display-window">
-    Output is:
-    {' '}
     {output}
   </div>
 );
