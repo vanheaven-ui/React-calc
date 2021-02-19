@@ -2,7 +2,11 @@ import Button from './Button';
 
 const ButtonPanel = () => {
   const renderButton = name => (
-    <Button ButtonName={name} />
+    <Button
+      ButtonName={name}
+      color={['+', '-', 'X', '/', '='].includes(name) ? 'default-btn-color' : 'grey-btn'}
+      wide={name === '0'}
+    />
   );
   return (
     <div className="btn-panel">
