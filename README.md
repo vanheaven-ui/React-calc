@@ -1,8 +1,8 @@
 <div align="center">
 
-# Math Magicians calculator
+# Math Magicians Calculator
 
-A browser calculator built for the Math Magicians Company.
+A browser calculator built for the Math Magicians company.
 
 [![Github Issues](https://img.shields.io/badge/GitHub-Issues-orange)](https://github.com/vanheaven-ui/React-calc/issues)
 [![GitHub Pull Requests](https://img.shields.io/badge/GitHub-Pull%20Requests-blue)](https://github.com/vanheaven-ui/React-calc/pulls)
@@ -29,8 +29,9 @@ A browser calculator built for the Math Magicians Company.
 This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for the Math Magicians company. The Project development was completed through the milestones below in order of execution:
 1. Project setup - This involved setting up the necessary dependencies.
 2. Build basic React user interface - This involved implementing the project React components.
+3. Update the User Interface with CSS style rules and flexbox rules.
 
-## Live Game Demo
+## Live Calculator Demo
 
 The built app is hosted on Heroku <br />
 
@@ -66,7 +67,6 @@ First get a copy of the project on your computer:
 ### 🛠 Installing <a name = "ins"></a>
 
 Once you have a local copy of the entire project on your computer, then:
-
 
 - If you don't meet the above prerequisites, visit [node download and installations docs](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) to install node js and npm.
 - Run `npm install` to install the project dependencies in the package.json file.
