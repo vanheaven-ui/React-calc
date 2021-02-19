@@ -1,15 +1,24 @@
 import PropTypes from 'prop-types';
 
-const Button = ({ ButtonName }) => (
-  <button type="button">{ButtonName}</button>
+const Button = ({ ButtonName, color, wide }) => (
+  <button
+    type="button"
+    className={color + (wide ? ' double-btn' : ' default-btn')}
+  >
+    {ButtonName}
+  </button>
 );
 
 Button.defaultProps = {
-  ButtonName: '--',
+  ButtonName: ' ',
+  color: '#f5913e',
+  wide: false,
 };
 
 Button.propTypes = {
   ButtonName: PropTypes.string,
+  color: PropTypes.string,
+  wide: PropTypes.bool,
 };
 
 export default Button;

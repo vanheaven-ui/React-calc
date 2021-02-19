@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Permanent Marker", cursive;
 }
 
 body {
@@ -12,16 +11,55 @@ body {
 }
 
 #root {
-  text-align: center;
-  padding: 30px 0;
+  width: 700px;
+  margin: 0 auto;
 }
 
-.App {
-  text-align: center;
+.display-window {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 48px;
+  align-items: center;
+  height: 100px;
+  background-color: #858693;
+  color: #fff;
+  font-weight: 700;
+  padding: 0 10px;
 }
 
 button {
-  padding: 0 5px;
-  text-align: center;
+  border: none;
+  font-size: 32px;
   cursor: pointer;
+}
+
+.btn-group {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: 1px solid #bababa;
+  border-right: 1px solid #d1d1d1;
+}
+
+.btn-group button:last-child {
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.default-btn-color {
+  background-color: #f5913e;
+}
+
+.grey-btn {
+  background-color: #e0e0e0;
+}
+
+.double-btn {
+  width: 50%;
+}
+
+.default-btn {
+  width: 25%;
 }
