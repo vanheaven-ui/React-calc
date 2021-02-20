@@ -29,7 +29,9 @@ A browser calculator built for the Math Magicians company.
 This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for the Math Magicians company. The Project development was completed through the milestones below in order of execution:
 1. Project setup - This involved setting up the necessary dependencies.
 2. Build basic React user interface - This involved implementing the project React components.
-3. Update the User Interface with CSS style rules and flexbox rules.
+3. Updated the User Interface with CSS style rules and flexbox rules.
+4. Calculator functionality - Under this, Javascript functions were inplemented to manage the calculator arithmetic logic.
+5. Merge Calculator logic to Calculator components - This involved using event listeners to make calculator components respond to calculator logic.
 
 ## Live Calculator Demo
 
@@ -44,6 +46,7 @@ The tools used to build the calculator are listed below:
 - Javascript(ES6).
 - React
 - prop-types node module
+- big.js node module
 - eslint
 - stylelint
 
