@@ -16,11 +16,24 @@ class App extends React.Component {
 
   handleClick(buttonName) {
     const stateCopy = { ...this.state };
-    stateCopy.total = 1;
-    stateCopy.next = 4;
-    stateCopy.operation = '+';
+    stateCopy.total = '0';
+    if (['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].includes(buttonName)) {
+      stateCopy.next = buttonName;
+    }
+
+    if (['AC', '%', '÷', '+', 'x', '%', '.', '=', '+/-', '-'].includes(buttonName)) {
+      stateCopy.operation = buttonName;
+    }
+
+    this.setState({
+      total: '0',
+      next: (['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].includes(buttonName)) ? buttonName : null,
+      operation: (['AC', '%', '÷', 'x', '%', '.', '=', '+/-', '-'].includes(buttonName)) ? buttonName : null,
+    });
+
+    // console.log(this.state, buttonName);
     console.log(stateCopy, buttonName);
-    calculate(this.state, buttonName);
+    // calculate(this.state, buttonName);
   }
 
   render() {
@@ -30,7 +43,7 @@ class App extends React.Component {
         <ButtonPanel onClick={buttonName => this.handleClick(buttonName)} />
         <button
           type="button"
-          onClick={() => calculate({ total: 0, next: 4, operation: '+' }, '=')}
+          onClick={() => calculate({ total: 0, next: 4, operation: '+' }, 'Click me')}
         >
           Click Me
         </button>
