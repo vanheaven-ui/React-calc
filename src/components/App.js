@@ -15,43 +15,28 @@ class App extends React.Component {
   }
 
   handleClick(buttonName) {
-    calculate(this.state, buttonName);
+    const stateCopy = { ...this.state };
+    stateCopy.total = 1;
+    stateCopy.next = 4;
+    stateCopy.operation = '+';
+    console.log(stateCopy, buttonName);
+    // calculate(this.state, buttonName);
   }
 
-  render () {
+  render() {
     return (
       <>
         <Display />
-        <ButtonPanel handleClick={this.handleClick}/>
+        <ButtonPanel onClick={buttonName => this.handleClick(buttonName)} />
+        <button
+          type="button"
+          onClick={() => calculate({ total: 0, next: 4, operation: '+' }, '=')}
+        >
+          Click Me
+        </button>
       </>
-    )
+    );
   }
 }
-
-// function App() {
-//   return (
-//     <>
-//       <Display />
-//       <ButtonPanel />
-//       <button
-//         type="button"
-//         onClick={() => {
-//           calculate({ total: 1, next: 0, operation: '+' }, '=');
-//           const display = document.querySelector('.display-window');
-//           const div = document.createElement('div');
-//           div.setAttribute('style', 'font-size: 24px; width: max-content; margin: 0 auto; color: green;');
-//           div.innerHTML = 'Just a placeholder!';
-//           display.insertAdjacentElement('beforebegin', div);
-
-//           setTimeout(() => {
-//             div.remove();
-//           }, 2000);
-//         }}
-//       >
-//         PlaceHolder Btn
-//       </button>
-//     </>
-//   );
-// }
 
 export default App;
