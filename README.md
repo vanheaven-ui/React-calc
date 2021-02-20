@@ -31,7 +31,7 @@ This project was a task by [Microverse Inc.](https://www.microverse.org/) to bui
 2. Build basic React user interface - This involved implementing the project React components.
 3. Updated the User Interface with CSS style rules and flexbox rules.
 4. Calculator functionality - Under this, Javascript functions were inplemented to manage the calculator arithmetic logic.
-5. Merge Calculator logic to Calculator components - This involved using event listeners to make calculator components respond to calculator logic.
+5. Hermonize Calculator logic and Calculator components - This involved using event listeners to make calculator components respond to calculator logic.
 
 ## Live Calculator Demo
 
