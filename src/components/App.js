@@ -20,7 +20,7 @@ class App extends React.Component {
     stateCopy.next = 4;
     stateCopy.operation = '+';
     console.log(stateCopy, buttonName);
-    // calculate(this.state, buttonName);
+    calculate(this.state, buttonName);
   }
 
   render() {
