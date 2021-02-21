@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
 const Button = ({
-  ButtonName, color, wide, onClick,
+  ButtonName, color, wide, clickHandler,
 }) => (
   <button
     type="button"
     className={color + (wide ? ' double-btn' : ' default-btn')}
-    onClick={() => onClick(ButtonName)}
+    onClick={() => clickHandler(ButtonName)}
   >
     {ButtonName}
   </button>
@@ -22,7 +22,7 @@ Button.propTypes = {
   ButtonName: PropTypes.string,
   color: PropTypes.string,
   wide: PropTypes.bool,
-  onClick: PropTypes.func.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default Button;
