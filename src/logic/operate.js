@@ -1,6 +1,7 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
+  Big.DP = 4;
   const operand1 = new Big(numberOne);
   const operand2 = new Big(numberTwo);
   let output;
@@ -17,24 +18,14 @@ const operate = (numberOne, numberTwo, operation) => {
     case '÷':
       if (numberTwo !== 0) {
         output = operand1.div(operand2);
+      } else {
+        output = 'Cannot divide by 0!';
       }
-      output = 'Cannot calculate!';
-      break;
-    case '%':
-      output = numberTwo ? operand2.div(100).toPrecision(10) : operand1.div(100).toPrecision(10);
       break;
     default:
       break;
   }
-  if (operation === '%') {
-    return output;
-  } if (operation === '÷') {
-    if (numberTwo !== 0) {
-      return output.toPrecision(4);
-    }
-    return output;
-  }
-  return output.toPrecision(1);
+  return output;
 };
 
 export default operate;
