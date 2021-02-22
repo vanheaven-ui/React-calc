@@ -11,7 +11,7 @@ body {
 }
 
 #root {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -62,4 +62,14 @@ button {
 
 .default-btn {
   width: 25%;
+}
+
+.alert {
+  background-color: rgba(255, 68, 34, 0.3);
+  max-width: 700px; 
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 700;
+  font-size: large;
 }
