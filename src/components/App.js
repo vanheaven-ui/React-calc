@@ -22,6 +22,13 @@ class App extends React.Component {
 
     if (Number.isNaN(parseInt(buttonName, 10)) && buttonName !== '=') {
       dataObjCopy.operation = buttonName;
+      if (buttonName === '.') {
+        if (dataObjCopy.next === null) {
+          dataObjCopy.total += buttonName;
+        } else if (dataObjCopy.next !== null) {
+          dataObjCopy.next += buttonName;
+        }
+      }
     } else if (typeof (parseInt(buttonName, 10)) === 'number' && buttonName !== '=') {
       if (dataObjCopy.operation !== null) {
         if (dataObjCopy.next === null) {
@@ -35,15 +42,13 @@ class App extends React.Component {
         dataObjCopy.total += buttonName;
       }
     }
-
-    const { dataObj } = this.state;
     this.setState({ dataObj: calculate(dataObjCopy, buttonName) });
-    console.log(dataObj, buttonName);
     console.log(dataObjCopy, buttonName);
   }
 
   render() {
     const { dataObj } = this.state;
+    console.log(typeof (dataObj.total));
     return (
       <>
         <Display
