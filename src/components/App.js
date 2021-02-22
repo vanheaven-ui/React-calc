@@ -7,46 +7,49 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      total: null,
-      next: null,
-      operation: null,
+      dataObj: {
+        total: null,
+        next: null,
+        operation: null,
+      },
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
     const stateCopy = { ...this.state };
-    stateCopy.total = '0';
-    if (['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].includes(buttonName)) {
-      stateCopy.next = buttonName;
+    const dataObjCopy = stateCopy.dataObj;
+
+    if (Number.isNaN(parseInt(buttonName, 10)) && buttonName !== '=') {
+      dataObjCopy.operation = buttonName;
+    } else if (typeof (parseInt(buttonName, 10)) === 'number' && buttonName !== '=') {
+      if (dataObjCopy.operation !== null) {
+        if (dataObjCopy.next === null) {
+          dataObjCopy.next = buttonName;
+        } else {
+          dataObjCopy.next += buttonName;
+        }
+      } else if (dataObjCopy.total === null) {
+        dataObjCopy.total = buttonName;
+      } else if (dataObjCopy.total !== null) {
+        dataObjCopy.total += buttonName;
+      }
     }
 
-    if (['AC', '%', '÷', '+', 'x', '%', '.', '=', '+/-', '-'].includes(buttonName)) {
-      stateCopy.operation = buttonName;
-    }
-
-    this.setState({
-      total: '0',
-      next: (['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'].includes(buttonName)) ? buttonName : null,
-      operation: (['AC', '%', '÷', 'x', '%', '.', '=', '+/-', '-'].includes(buttonName)) ? buttonName : null,
-    });
-
-    // console.log(this.state, buttonName);
-    console.log(stateCopy, buttonName);
-    // calculate(this.state, buttonName);
+    const { dataObj } = this.state;
+    this.setState({ dataObj: calculate(dataObjCopy, buttonName) });
+    console.log(dataObj, buttonName);
+    console.log(dataObjCopy, buttonName);
   }
 
   render() {
+    const { dataObj } = this.state;
     return (
       <>
-        <Display />
-        <ButtonPanel onClick={buttonName => this.handleClick(buttonName)} />
-        <button
-          type="button"
-          onClick={() => calculate({ total: 0, next: 4, operation: '+' }, 'Click me')}
-        >
-          Click Me
-        </button>
+        <Display
+          output={dataObj.total === null ? '0' : dataObj.total.toString()}
+        />
+        <ButtonPanel clickHandler={this.handleClick} />
       </>
     );
   }
