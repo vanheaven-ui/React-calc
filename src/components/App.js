@@ -48,11 +48,15 @@ class App extends React.Component {
 
   render() {
     const { dataObj } = this.state;
-    console.log(typeof (dataObj.total));
+    const nxt = dataObj.next;
+    const opr = dataObj.operation;
+    console.log(nxt, opr);
     return (
       <>
         <Display
           output={dataObj.total === null ? '0' : dataObj.total.toString()}
+          nxt={nxt === null ? '' : nxt}
+          opr={opr === null ? '' : opr}
         />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
