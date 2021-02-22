@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Display = ({ output, nxt, opr }) => (
   <div className="display-window">
     {output}
-    {opr}
+    {opr === '%' ? '' : opr}
     {nxt}
   </div>
 );
