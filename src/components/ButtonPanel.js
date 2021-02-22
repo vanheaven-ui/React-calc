@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = ({ onClick }) => {
+const ButtonPanel = ({ clickHandler }) => {
   const renderButton = name => (
     <Button
       ButtonName={name}
       color={['÷', 'x', '-', '+', '='].includes(name) ? 'default-btn-color' : 'grey-btn'}
       wide={name === '0'}
-      onClick={() => onClick(name)}
+      clickHandler={() => clickHandler(name)}
     />
   );
   return (
@@ -46,7 +46,7 @@ const ButtonPanel = ({ onClick }) => {
 };
 
 ButtonPanel.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
