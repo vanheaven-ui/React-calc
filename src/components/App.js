@@ -19,15 +19,17 @@ class App extends React.Component {
   handleClick(buttonName) {
     const stateCopy = { ...this.state };
     const dataObjCopy = stateCopy.dataObj;
+    const mutants = ['+/-', '%', '', ''];
 
-    if (Number.isNaN(parseInt(buttonName, 10)) && buttonName !== '=') {
-      dataObjCopy.operation = buttonName;
-      if (buttonName === '.') {
-        if (dataObjCopy.next === null) {
-          dataObjCopy.total += buttonName;
-        } else if (dataObjCopy.next !== null) {
-          dataObjCopy.next += buttonName;
-        }
+    console.log((Number.isNaN(parseInt(buttonName, 10))));
+
+    if (dataObjCopy.total === null && buttonName === '.') {
+      dataObjCopy.total = '0';
+    }
+
+    if (Number.isNaN(parseInt(buttonName, 10)) && buttonName !== '=' && buttonName !== '.') {
+      if (!mutants.includes(buttonName)) {
+        dataObjCopy.operation = buttonName;
       }
     } else if (typeof (parseInt(buttonName, 10)) === 'number' && buttonName !== '=') {
       if (dataObjCopy.operation !== null) {
@@ -50,13 +52,13 @@ class App extends React.Component {
     const { dataObj } = this.state;
     const nxt = dataObj.next;
     const opr = dataObj.operation;
-    console.log(nxt, opr);
+    console.log(dataObj.total, nxt, opr);
     return (
       <>
         <Display
           output={dataObj.total === null ? '0' : dataObj.total.toString()}
-          nxt={nxt === null ? '' : nxt}
-          opr={opr === null ? '' : opr}
+          nxt={nxt === null ? '' : nxt.toString()}
+          opr={opr === null ? '' : opr.toString()}
         />
         <ButtonPanel clickHandler={this.handleClick} />
       </>
