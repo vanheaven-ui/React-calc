@@ -44,9 +44,6 @@ const calculate = (dataObj, buttonName) => {
       total = null;
       const alert = document.createElement('div');
       alert.innerHTML = 'Cannot divide by 0!';
-      alert.setAttribute(
-        'style', 'background-color: rgba(255, 68, 34, 0.3; max-width: 700px; margin: 0 auto;',
-      );
       alert.classList.add('alert');
       document.body.insertAdjacentElement('afterBegin', alert);
       setTimeout(() => {
