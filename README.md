@@ -26,7 +26,7 @@ A browser calculator built for the Math Magicians company.
 
 ## Background <a name = "about"></a>
 
-This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for the Math Magicians fictitious company. The milestones below constituted the project development in order of execution:
+This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for the Math Magicians fictitious company. The milestones listed below constituted the project development in order of execution:
 1. Project setup - This involved setting up the necessary dependencies.
 2. Build the calculator user interface - This involved implementing the project React components.
 3. User interface update - This involved updating the User Interface with CSS style rules and flexbox rules.
@@ -76,7 +76,7 @@ Once you have a local copy of the entire project on your computer, then:
 
 ### Testing <a name = "tests"></a>
 
-Jest was used to test the code contained herein.
+Jest <b>will be <br> used to test the code contained herein.
 To run the tests written in this project, then:
 
 - Type/copy `npm run test` into the terminal and strike `Enter`.
