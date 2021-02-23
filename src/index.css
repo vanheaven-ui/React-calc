@@ -66,10 +66,14 @@ button {
 
 .alert {
   background-color: rgba(255, 68, 34, 0.3);
-  max-width: 700px;
-  margin: 0 auto;
   text-align: center;
   font-family: "Permanent Marker", cursive;
   font-weight: 700;
   font-size: large;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.9);
+  position: absolute;
+  left: 43vw;
+  top: 35px;
+  padding: 2px 10px;
 }
