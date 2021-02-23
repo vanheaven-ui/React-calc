@@ -1,7 +1,8 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  Big.DP = 4;
+  Big.DP = 24;
+  console.log(numberOne, typeof (numberTwo), Big.RM);
   const operand1 = new Big(numberOne);
   const operand2 = new Big(numberTwo);
   let output;
@@ -16,7 +17,7 @@ const operate = (numberOne, numberTwo, operation) => {
       output = operand1.times(operand2);
       break;
     case '÷':
-      if (numberTwo !== 0) {
+      if (numberTwo !== '0') {
         output = operand1.div(operand2);
       } else {
         output = 'Cannot divide by 0!';
