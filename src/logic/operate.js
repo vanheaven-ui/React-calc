@@ -1,8 +1,7 @@
 import Big from 'big.js';
 
 const operate = (numberOne, numberTwo, operation) => {
-  Big.DP = 24;
-  console.log(numberOne, typeof (numberTwo), Big.RM);
+  Big.DP = 10;
   const operand1 = new Big(numberOne);
   const operand2 = new Big(numberTwo);
   let output;
