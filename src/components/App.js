@@ -21,20 +21,14 @@ class App extends React.Component {
     const dataObjCopy = stateCopy.dataObj;
     const mutants = ['+/-', '%'];
 
-    // This guy gives us the non number buttons
     if (Number.isNaN(parseInt(buttonName, 10)) && buttonName !== '=' && buttonName !== '.') {
       if (!mutants.includes(buttonName)) {
-        // This if block checks if the dataObjCopy ends with a . and avoids adding more ...
-        // if (dataObjCopy.total.toString().endsWith('.', dataObjCopy.total.toString().length)) {
-        //   dataObjCopy.operation = null;
-        // } else {
         dataObjCopy.operation = buttonName;
-        // }
       }
       if (dataObjCopy.total === null) {
         dataObjCopy.total = '0';
       }
-    } else if (typeof (parseInt(buttonName, 10)) === 'number' && buttonName !== '=') { // this gives me the number buttons
+    } else if (typeof (parseInt(buttonName, 10)) === 'number' && buttonName !== '=' && buttonName !== '.') { // this gives me the number buttons
       if (dataObjCopy.operation !== null) {
         if (dataObjCopy.next === null) {
           dataObjCopy.next = buttonName;
@@ -44,8 +38,6 @@ class App extends React.Component {
       } else if (dataObjCopy.total === null) {
         dataObjCopy.total = buttonName;
       } else if (dataObjCopy.total !== null) {
-        /* if you have a result that ia a number, this avoids concatenating
-        numbers to value before appending an operation */
         if (typeof (dataObjCopy.total) === 'object') {
           dataObjCopy.total = buttonName;
         } else {
@@ -60,8 +52,6 @@ class App extends React.Component {
     const { dataObj } = this.state;
     const nxt = dataObj.next;
     const opr = dataObj.operation;
-    console.log(dataObj.total, nxt, opr);
-    console.log(dataObj);
     return (
       <>
         <Display
