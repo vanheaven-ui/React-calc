@@ -13,10 +13,9 @@ class App extends React.Component {
         operation: null,
       },
     };
-    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(buttonName) {
+  handleClick = buttonName => {
     const stateCopy = { ...this.state };
     const dataObjCopy = stateCopy.dataObj;
     const mutants = ['+/-', '%'];
