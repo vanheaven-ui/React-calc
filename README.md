@@ -121,4 +121,5 @@ Give a ⭐️ if you like this project!
 ## :clap: Acknowledgements
 
 - [Microverse Community](https://www.microverse.org/) <br />
-- [React Official Documentation](https://reactjs.org/)
+- [React Official Documentation](https://reactjs.org/) <br />
+- [big.js API](https://mikemcl.github.io/big.js/)
