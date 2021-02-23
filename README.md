@@ -26,12 +26,12 @@ A browser calculator built for the Math Magicians company.
 
 ## Background <a name = "about"></a>
 
-This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for the Math Magicians company. The Project development was completed through the milestones below in order of execution:
-1. Project setup - This involved setting up the necessary dependencies.
-2. Build basic React user interface - This involved implementing the project React components.
-3. User interface update - This involved updating the User Interface with CSS style rules and flexbox rules.
-4. Calculator functionality - Under this, Javascript functions were inplemented to manage the calculator arithmetic logic.
-5. Hermonize calculator logic and calculator components - This involved using event listeners to make calculator components respond to calculator logic.
+This project was a task by [Microverse Inc.](https://www.microverse.org/) to build a browser calculator for the Math Magicians fictitious company. The milestones listed below constituted the project development in order of execution:
+1. Project setup - This involved using `create-react-app` to initialize the application and setting up the necessary dependencies.
+2. Build the calculator user interface - This involved implementing the project React components.
+3. User interface update - This is when the User Interface was modified with CSS style rules and flexbox rules.
+4. Calculator functionality - Javascript functions were implemented to manage the calculator arithmetic logic.
+5. Harmonize the calculator logic and the calculator components - The calculator functionality was implemented by using event listeners to make the calculator components respond to the calculator logic.
 
 ## Live Calculator Demo
 
@@ -76,7 +76,7 @@ Once you have a local copy of the entire project on your computer, then:
 
 ### Testing <a name = "tests"></a>
 
-Jest was used to test the code contained herein.
+Jest <b>will be </b> used to test the code contained herein.
 To run the tests written in this project, then:
 
 - Type/copy `npm run test` into the terminal and strike `Enter`.
@@ -121,4 +121,5 @@ Give a ⭐️ if you like this project!
 ## :clap: Acknowledgements
 
 - [Microverse Community](https://www.microverse.org/) <br />
-- [React Official Documentation](https://reactjs.org/)
+- [React Official Documentation](https://reactjs.org/) <br />
+- [big.js API](https://mikemcl.github.io/big.js/)
