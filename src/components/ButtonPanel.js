@@ -2,12 +2,16 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const ButtonPanel = ({ clickHandler }) => {
+  const handleClick = buttonName => {
+    clickHandler(buttonName);
+  };
+
   const renderButton = name => (
     <Button
       ButtonName={name}
       color={['÷', 'x', '-', '+', '='].includes(name) ? 'default-btn-color' : 'grey-btn'}
       wide={name === '0'}
-      clickHandler={() => clickHandler(name)}
+      clickHandler={name => handleClick(name)}
     />
   );
   return (
