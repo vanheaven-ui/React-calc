@@ -76,7 +76,7 @@ Once you have a local copy of the entire project on your computer, then:
 
 ### Testing <a name = "tests"></a>
 
-Jest <b>will be <br> used to test the code contained herein.
+Jest <b>will be </b> used to test the code contained herein.
 To run the tests written in this project, then:
 
 - Type/copy `npm run test` into the terminal and strike `Enter`.
