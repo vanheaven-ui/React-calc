@@ -2,7 +2,6 @@ import operate from './operate';
 
 const calculate = (dataObj, buttonName) => {
   let { total, next, operation } = dataObj;
-  console.log(total, next);
   switch (buttonName) {
     case '+/-':
       if (total && !next) {
@@ -23,6 +22,18 @@ const calculate = (dataObj, buttonName) => {
         next /= 100;
       }
       break;
+    case '.':
+      if (total === null) {
+        total = '0.';
+      } else if (total && !total.includes('.')) {
+        total += '.';
+      }
+      if (!next && total && operation) {
+        next = '0.';
+      } else if (next && !next.includes('.')) {
+        next += '.';
+      }
+      break;
     default:
       break;
   }
@@ -30,7 +41,8 @@ const calculate = (dataObj, buttonName) => {
   if (buttonName === '=' && total && next) {
     total = operate(total, next, operation);
     console.log(typeof (total));
-    if (typeof (total) === 'string') {
+
+    if (total === 'Cannot divide by 0!') {
       total = null;
       const alert = document.createElement('div');
       alert.innerHTML = 'Cannot divide by 0!';
