@@ -8,11 +8,13 @@
 
 body {
   min-height: 100vh;
+  background-color: #cdcdcd;
 }
 
 #root {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 10px auto 0;
+  box-shadow: 1px 1px 6px 1px #858693;
 }
 
 .display-window {
@@ -71,7 +73,6 @@ button {
   font-weight: 700;
   font-size: large;
   border-radius: 10px;
-  background-color: rgba(255, 0, 0, 0.9);
   position: absolute;
   left: 43vw;
   top: 35px;
