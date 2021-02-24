@@ -23,9 +23,9 @@ const calculate = (dataObj, buttonName) => {
       }
       break;
     case '.':
-      if (total === null) {
+      if (!total) {
         total = '0.';
-      } else if (total && !total.toString().includes('.')) {
+      } else if (total && !total.toString().includes('.') && !next && !operation) {
         total += '.';
       }
       if (!next && total && operation) {
