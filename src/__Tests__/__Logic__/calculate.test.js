@@ -1,5 +1,5 @@
-import calculate from '../../logic/calculate';
 import Big from 'big.js';
+import calculate from '../../logic/calculate';
 import operate from '../../logic/operate';
 
 const dataObj = {
@@ -42,4 +42,11 @@ test('Calculate mutates dataObj with AC', () => {
   expectedObj.next = null;
   expectedObj.total = null;
   expect(calculate(dataObj, 'AC')).toStrictEqual(expectedObj);
+});
+
+test('Calculate calls operate function when button clicked is \'=\'', () => {
+  dataObj.next = '2';
+  dataObj.operation = '+';
+  console.log(dataObj);
+  expect(operate(dataObj, '=')).toHaveBeenCalledTimes(1);
 });
