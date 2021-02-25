@@ -47,6 +47,5 @@ test('Calculate mutates dataObj with AC', () => {
 test('Calculate calls operate function when button clicked is \'=\'', () => {
   dataObj.next = '2';
   dataObj.operation = '+';
-  console.log(dataObj);
   expect(operate(dataObj, '=')).toHaveBeenCalledTimes(1);
 });

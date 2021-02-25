@@ -7,7 +7,7 @@ const Button = ({
     type="button"
     className={color + (wide ? ' double-btn' : ' default-btn')}
     onClick={() => clickHandler(ButtonName)}
-    data-testid='button'
+    data-testid="button"
   >
     {ButtonName}
   </button>

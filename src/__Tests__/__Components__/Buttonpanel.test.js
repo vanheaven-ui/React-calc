@@ -6,5 +6,5 @@ const handleClick = () => '';
 
 test('is rendered without crashing', () => {
   const rootNode = document.createElement('div');
-  ReactDOM.render(<ButtonPanel clickHandler={handleClick}/>, rootNode);
+  ReactDOM.render(<ButtonPanel clickHandler={handleClick} />, rootNode);
 });
