@@ -3,7 +3,7 @@ import ButtonPanel from '../ButtonPanel';
 import Display from '../Display';
 import Navbar from '../Navbar';
 import calculate from '../../logic/calculate';
-import History from '../History';
+import GetHistory from '../History';
 
 const App = () => {
   const [state, setState] = useState({
@@ -12,7 +12,6 @@ const App = () => {
     operation: null,
   });
   const [loadHist, setLoadHist] = useState(false);
-  const [closeHist, setCloseHist] = useState(false);
 
   const handleClick = buttonName => {
     const mutants = ['+/-', '%'];
@@ -55,11 +54,9 @@ const App = () => {
 
   const getHistory = () => {
     setLoadHist(true);
-    setCloseHist(false);
   };
 
   const closeHistory = () => {
-    setCloseHist(true);
     setLoadHist(false);
   };
 
@@ -69,9 +66,9 @@ const App = () => {
       <article className="calc-section">
         <div className="calc-history">
           <h2>Mathematics is a daily vital!!!</h2>
-          {closeHist && <button type="submit" onClick={closeHistory}>Close History</button>}
-          {<button className="hist-btn" type="submit" onClick={getHistory}>Get History</button>}
-          {loadHist && <History />}
+          {loadHist && <button className="hist-btn" type="submit" onClick={closeHistory}>Close History</button>}
+          {!loadHist && <button className="hist-btn" type="submit" onClick={getHistory}>Get History</button>}
+          {loadHist && <GetHistory />}
         </div>
         <div className="calc">
           <Display
