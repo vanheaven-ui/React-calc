@@ -1,6 +1,6 @@
 import LS from '../store/local-storage';
 
-const History = () => {
+const GetHistory = () => {
   const hist = LS.getHistory();
 
   return (
@@ -21,4 +21,4 @@ const History = () => {
   );
 };
 
-export default History;
+export default GetHistory;
