@@ -1,7 +1,10 @@
 import operate from './operate';
 
 const calculate = (dataObj, buttonName) => {
-  let { total, next, operation } = dataObj;
+  let {
+    total, next, operation,
+  } = dataObj;
+
   switch (buttonName) {
     case '+/-':
       if (total && !next) {

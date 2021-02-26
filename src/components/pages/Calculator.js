@@ -3,6 +3,7 @@ import ButtonPanel from '../ButtonPanel';
 import Display from '../Display';
 import Navbar from '../Navbar';
 import calculate from '../../logic/calculate';
+import History from '../History';
 
 const App = () => {
   const [state, setState] = useState({
@@ -10,6 +11,8 @@ const App = () => {
     next: null,
     operation: null,
   });
+  const [loadHist, setLoadHist] = useState(false);
+  const [closeHist, setCloseHist] = useState(false);
 
   const handleClick = buttonName => {
     const mutants = ['+/-', '%'];
@@ -49,11 +52,27 @@ const App = () => {
     }
     setState(calculate(state, buttonName));
   };
+
+  const getHistory = () => {
+    setLoadHist(true);
+    setCloseHist(false);
+  };
+
+  const closeHistory = () => {
+    setCloseHist(true);
+    setLoadHist(false);
+  };
+
   return (
     <>
       <Navbar />
       <article className="calc-section">
-        <h2>Mathematics is a daily vital!!!</h2>
+        <div className="calc-history">
+          <h2>Mathematics is a daily vital!!!</h2>
+          {closeHist && <button type="submit" onClick={closeHistory}>Close History</button>}
+          {<button className="hist-btn" type="submit" onClick={getHistory}>Get History</button>}
+          {loadHist && <History />}
+        </div>
         <div className="calc">
           <Display
             output={state.total === null ? '0' : state.total.toString()}
@@ -62,7 +81,6 @@ const App = () => {
           />
           <ButtonPanel clickHandler={handleClick} />
         </div>
-
       </article>
     </>
   );

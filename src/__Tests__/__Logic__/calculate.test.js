@@ -18,6 +18,8 @@ test('calculate is defined', () => {
   expect(calculate(dataObj, '')).toBeDefined();
 });
 
+/* eslint-disable */
+
 test('calculate mutates dataObj with +/-', () => {
   expectedObj.total = Big('-1'),
   expect(calculate(dataObj, '+/-')).toStrictEqual(expectedObj);
@@ -26,6 +28,8 @@ test('calculate mutates dataObj with +/-', () => {
   expectedObj.next = Big('-2');
   expect(calculate(dataObj, '+/-')).toStrictEqual(expectedObj);
 });
+
+/* eslint-enable */
 
 test('Calculate mutates dataObj with %', () => {
   expectedObj.next = 0.02;
@@ -45,7 +49,10 @@ test('Calculate mutates dataObj with AC', () => {
 });
 
 test('Calculate calls operate function when button clicked is \'=\'', () => {
+  //  Mock the operate callback function here
   dataObj.next = '2';
   dataObj.operation = '+';
-  expect(operate(dataObj, '=')).toHaveBeenCalledTimes(1);
+  console.log(dataObj);
+  calculate(dataObj, '=');
+  expect(operate(dataObj.total, dataObj.next, dataObj.operation)).toHaveBeenCalledTimes(1);
 });

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => (
   <nav className="navbar">
-    <h2>Math Magicians</h2>
+    <Link to="/"><h2>Math Magicians</h2></Link>
     <div className="links">
       <Link to="/">Home</Link>
       <Link to="/calc">Calculator</Link>
