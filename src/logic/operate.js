@@ -27,7 +27,7 @@ const operate = (numberOne, numberTwo, operation) => {
       break;
   }
   LS.addHistory({
-    total: numberOne, next: numberTwo, operation,
+    total: numberOne, next: numberTwo, operation, result: output,
   });
 
   return output;
