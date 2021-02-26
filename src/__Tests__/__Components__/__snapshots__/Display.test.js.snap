@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`doesnot change unexpectedly 1`] = `
+<div
+  className="display-window"
+>
+  0
+  
+  
+</div>
+`;

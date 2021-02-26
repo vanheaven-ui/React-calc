@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`doesnot change unexpectedly 1`] = `
+Array [
+  <nav
+    className="navbar"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h2>
+        Math Magicians
+      </h2>
+    </a>
+    <div
+      className="links"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        href="/calc"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+      <a
+        href="/quotes"
+        onClick={[Function]}
+      >
+        Quotes
+      </a>
+    </div>
+  </nav>,
+  <article
+    className="calc-section"
+  >
+    <div
+      className="calc-history"
+    >
+      <h2>
+        Mathematics is a daily vital!!!
+      </h2>
+      <button
+        className="hist-btn"
+        onClick={[Function]}
+        type="submit"
+      >
+        Get History
+      </button>
+    </div>
+    <div
+      className="calc"
+    >
+      <div
+        className="display-window"
+      >
+        0
+        
+        
+      </div>
+      <div
+        className="btn-panel"
+      >
+        <div
+          className="btn-group"
+        >
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            AC
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            +/-
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            %
+          </button>
+          <button
+            className="default-btn-color default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            ÷
+          </button>
+        </div>
+        <div
+          className="btn-group"
+        >
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            7
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            8
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            9
+          </button>
+          <button
+            className="default-btn-color default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            x
+          </button>
+        </div>
+        <div
+          className="btn-group"
+        >
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            4
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            5
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            6
+          </button>
+          <button
+            className="default-btn-color default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            -
+          </button>
+        </div>
+        <div
+          className="btn-group"
+        >
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            1
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            2
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            3
+          </button>
+          <button
+            className="default-btn-color default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            +
+          </button>
+        </div>
+        <div
+          className="btn-group"
+        >
+          <button
+            className="grey-btn double-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            0
+          </button>
+          <button
+            className="grey-btn default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            .
+          </button>
+          <button
+            className="default-btn-color default-btn"
+            onClick={[Function]}
+            type="button"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>,
+]
+`;
