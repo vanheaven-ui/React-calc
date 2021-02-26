@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import Display from '../../components/Display';
 import '@testing-library/jest-dom';
@@ -12,6 +11,6 @@ test('is rendered without crashing', () => {
 
 test('doesnot change unexpectedly', () => {
   const displayComp = renderer.create(<Display />);
-  let tree = displayComp.toJSON();
+  const tree = displayComp.toJSON();
   expect(tree).toMatchSnapshot();
 });

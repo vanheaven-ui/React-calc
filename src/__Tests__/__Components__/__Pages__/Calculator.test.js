@@ -7,12 +7,13 @@ import App from '../../../components/pages/Calculator';
 test('is rendered correctly', () => {
   const rootNode = document.createElement('div');
   ReactDOM.render(
-    <BrowserRouter><App /></BrowserRouter>, rootNode);
+    <BrowserRouter><App /></BrowserRouter>, rootNode,
+  );
 });
 
 test('doesnot change unexpectedly', () => {
   const appTree = renderer.create(
-    <BrowserRouter><App /></BrowserRouter>
+    <BrowserRouter><App /></BrowserRouter>,
   ).toJSON();
   expect(appTree).toMatchSnapshot();
 });

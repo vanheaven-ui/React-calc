@@ -11,7 +11,7 @@ test('is rendered without crashing', () => {
 
 test('doesnot change unexpectedly', () => {
   const homeTree = renderer.create(
-    <BrowserRouter><Home /></BrowserRouter>
+    <BrowserRouter><Home /></BrowserRouter>,
   ).toJSON();
   expect(homeTree).toMatchSnapshot();
 });

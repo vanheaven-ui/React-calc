@@ -1,4 +1,4 @@
-import { render, cleanup } from '@testing-library/react';
+import { cleanup } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -16,8 +16,8 @@ test('is rendered without crashing', () => {
 
 test('doesnot change unexpectedly', () => {
   const buttonPanel = renderer.create(
-    <ButtonPanel clickHandler={handleClick}></ButtonPanel>
+    <ButtonPanel clickHandler={handleClick} />,
   );
-  let tree = buttonPanel.toJSON();
+  const tree = buttonPanel.toJSON();
   expect(tree).toMatchSnapshot();
 });
