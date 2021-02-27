@@ -1,4 +1,5 @@
 import Big from 'big.js';
+import LS from '../store/local-storage';
 
 const operate = (numberOne, numberTwo, operation) => {
   Big.DP = 10;
@@ -25,6 +26,10 @@ const operate = (numberOne, numberTwo, operation) => {
     default:
       break;
   }
+  LS.addHistory({
+    total: numberOne, next: numberTwo, operation, result: output,
+  });
+
   return output;
 };
 

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`component doesn't change unexpectedly 1`] = `
+<button
+  className="#f5913e default-btn"
+  onClick={[Function]}
+  type="button"
+>
+   
+</button>
+`;

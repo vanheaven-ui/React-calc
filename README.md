@@ -32,6 +32,9 @@ This project was a task by [Microverse Inc.](https://www.microverse.org/) to bui
 3. User interface update - This is when the User Interface was modified with CSS style rules and flexbox rules.
 4. Calculator functionality - Javascript functions were implemented to manage the calculator arithmetic logic.
 5. Harmonize the calculator logic and the calculator components - The calculator functionality was implemented by using event listeners to make the calculator components respond to the calculator logic.
+6. Use React Hooks for state management.
+7. Create a three page website and add routing between the pages.
+8. Use Jest and React testing library to test the three page website.
 
 ## Live Calculator Demo
 
@@ -76,7 +79,7 @@ Once you have a local copy of the entire project on your computer, then:
 
 ### Testing <a name = "tests"></a>
 
-Jest <b>will be </b> used to test the code contained herein.
+Jest was used to test the code contained herein.
 To run the tests written in this project, then:
 
 - Type/copy `npm run test` into the terminal and strike `Enter`.

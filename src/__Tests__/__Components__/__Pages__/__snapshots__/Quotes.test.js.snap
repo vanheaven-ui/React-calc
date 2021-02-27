@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`doesnot change unexpectedly 1`] = `
+Array [
+  <nav
+    className="navbar"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <h2>
+        Math Magicians
+      </h2>
+    </a>
+    <div
+      className="links"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        href="/calc"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+      <a
+        href="/quotes"
+        onClick={[Function]}
+      >
+        Quotes
+      </a>
+    </div>
+  </nav>,
+  <article
+    className="quotes-page main"
+  >
+    <h1>
+      Enjoy this famous quote!
+    </h1>
+    <figure>
+      <blockquote>
+        Without Mathematics, there is nothing you can do. Everything around you is mathematics.
+        <br />
+        Everything around you is numbers
+        <br />
+        <br />
+        <span>
+          _By: Shakuntala Devi
+        </span>
+      </blockquote>
+    </figure>
+  </article>,
+]
+`;

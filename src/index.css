@@ -1,9 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Concert+One&family=Orbitron:wght@500&family=Permanent+Marker&family=Special+Elite&family=Stick&display=swap');
+
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Concert One', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Stick', sans-serif; */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 body {
@@ -12,9 +28,126 @@ body {
 }
 
 #root {
-  max-width: 700px;
-  margin: 10px auto 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  font-size: large;
+  box-shadow: 1px 0 7px #333;
+  margin-bottom: 10px;
+  background-color: #aaa6a6;
+  align-items: center;
+}
+
+nav h2 {
+  font-family: 'Stick', sans-serif;
+  font-size: 2rem;
+  text-shadow: 1px 1px #f5913e;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 40px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.links a:hover {
+  background: linear-gradient(360deg, #f5913e 10%, transparent);
+}
+
+.links a:focus {
+  background: linear-gradient(360deg, #f5913e 10%, transparent);
+}
+
+.main {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0 0;
+}
+
+article h1 {
+  font-size: 2.2rem;
+  font-family: 'Concert One', cursive;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+article h2 {
+  margin-bottom: 20px;
+  font-family: 'Concert One', cursive;
+  font-size: 1.8rem;
+}
+
+.text {
+  width: 70vw;
+  text-align: justify;
+  font-family: 'Caveat', cursive;
+  background-color: #f1f1e2;
+  padding: 10px;
+  border: 1px inset;
+  font-size: 1.3rem;
+}
+
+.calc-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc {
+  width: 700px;
   box-shadow: 1px 1px 6px 1px #858693;
+  margin-right: 10px;
+}
+
+.calc-history {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hist-btn {
+  padding: 3px 16px;
+  border: 1px solid #f5913e;
+  border-radius: 10px;
+  color: #f5913e;
+  transition: all 0.5s ease;
+  font-family: 'Stick', sans-serif;
+}
+
+.hist-btn:hover {
+  background-color: #f5913e;
+  color: #f1f1e2;
+  border: 1px solid #f1f1e2;
+  outline: none;
+}
+
+.hist-btn:active {
+  outline: none;
+}
+
+.close-hist-btn {
+  padding: 3px 16px;
+  border: 1px solid #f1f1e2;
+  border-radius: 10px;
+  color: #f1f1e2;
+  background-color: #f5913e;
+  transition: all 0.5s ease;
+  font-family: 'Stick', sans-serif;
+}
+
+.close-hist-btn:hover {
+  color: red;
+  border: 1px solid red;
+  background-color: #f1f1e2;
 }
 
 .display-window {
@@ -74,7 +207,59 @@ button {
   font-size: large;
   border-radius: 10px;
   position: absolute;
-  left: 43vw;
-  top: 35px;
+  left: 55vw;
+  top: 15vh;
   padding: 2px 10px;
+}
+
+blockquote {
+  font-family: 'Special Elite', cursive;
+  width: 70vw;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+blockquote span {
+  font-family: 'Architects Daughter', cursive;
+}
+
+.hist-list p {
+  width: inherit;
+  background-color: #f1f1e2;
+  padding: 5px 10px 0;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calc-section {
+    flex-direction: column;
+  }
+
+  .calc {
+    max-width: 700px;
+    min-width: 240px;
+  }
+
+  .calc-history {
+    width: 100%;
+  }
+
+  .text {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
