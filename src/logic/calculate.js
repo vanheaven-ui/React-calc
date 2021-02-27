@@ -42,7 +42,7 @@ const calculate = (dataObj, buttonName) => {
   }
 
   if (buttonName === '=' && total && next) {
-    total = operate(total, next, operation);
+    total = operate(total, next, operation).toString();
     if (total === 'Cannot divide by 0!') {
       total = null;
       const alert = document.createElement('div');
