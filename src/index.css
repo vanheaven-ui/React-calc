@@ -134,6 +134,22 @@ article h2 {
   outline: none;
 }
 
+.close-hist-btn {
+  padding: 3px 16px;
+  border: 1px solid #f1f1e2;
+  border-radius: 10px;
+  color: #f1f1e2;
+  background-color: #f5913e;
+  transition: all 0.5s ease;
+  font-family: 'Stick', sans-serif;
+}
+
+.close-hist-btn:hover {
+  color: red;
+  border: 1px solid red;
+  background-color: #f1f1e2;
+}
+
 .display-window {
   display: flex;
   justify-content: flex-end;
