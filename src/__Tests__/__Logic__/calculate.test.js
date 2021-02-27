@@ -68,7 +68,7 @@ test('mutates state next with %', () => {
   expect(calculate(dataObj, '%')).toStrictEqual(expectedObj);
 });
 
-test('mutates state next with %', () => {
+test('mutates state total with %', () => {
   dataObj.next = null;
   expectedObj.next = null;
   expectedObj.total = 0.01;
