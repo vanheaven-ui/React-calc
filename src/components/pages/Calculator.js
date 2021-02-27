@@ -66,7 +66,7 @@ const App = () => {
       <article className="calc-section">
         <div className="calc-history">
           <h2>Mathematics is a daily vital!!!</h2>
-          {loadHist && <button className="hist-btn" type="submit" onClick={closeHistory}>Close History</button>}
+          {loadHist && <button className="close-hist-btn" type="submit" onClick={closeHistory}>Close History</button>}
           {!loadHist && <button className="hist-btn" type="submit" onClick={getHistory}>Get History</button>}
           {loadHist && <GetHistory />}
         </div>
