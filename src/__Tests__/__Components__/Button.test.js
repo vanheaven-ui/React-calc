@@ -20,9 +20,16 @@ test('component doesn\'t change unexpectedly', () => {
   expect(tree).toMatchSnapshot();
 });
 
-test('component renders the correct text', () => {
+test('Renders the Button component', () => {
   const { getByRole } = render(
     <Button clickHandler={handleClick} />,
   );
   expect(getByRole('button')).toBeInTheDocument();
+});
+
+test('Renders the Button with correct text', () => {
+  const { getByRole } = render(
+    <Button clickHandler={handleClick} />,
+  );
+  expect(getByRole('button')).toHaveAttribute('class', '#f5913e default-btn');
 });

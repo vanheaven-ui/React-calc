@@ -58,6 +58,7 @@ Array [
     >
       <div
         className="display-window"
+        data-testid="div"
       >
         0
         

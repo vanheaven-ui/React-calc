@@ -3,6 +3,7 @@
 exports[`doesnot change unexpectedly 1`] = `
 <div
   className="display-window"
+  data-testid="div"
 >
   0
   
