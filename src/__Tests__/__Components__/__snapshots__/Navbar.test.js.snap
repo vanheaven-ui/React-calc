@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does not change unexpectedly 1`] = `
+<nav
+  className="navbar"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <h2>
+      Math Magicians
+    </h2>
+  </a>
+  <div
+    className="links"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+    <a
+      href="/calc"
+      onClick={[Function]}
+    >
+      Calculator
+    </a>
+    <a
+      href="/quotes"
+      onClick={[Function]}
+    >
+      Quotes
+    </a>
+  </div>
+</nav>
+`;

@@ -1,7 +1,10 @@
 import operate from './operate';
 
 const calculate = (dataObj, buttonName) => {
-  let { total, next, operation } = dataObj;
+  let {
+    total, next, operation,
+  } = dataObj;
+
   switch (buttonName) {
     case '+/-':
       if (total && !next) {
@@ -39,7 +42,7 @@ const calculate = (dataObj, buttonName) => {
   }
 
   if (buttonName === '=' && total && next) {
-    total = operate(total, next, operation);
+    total = operate(total, next, operation).toString();
     if (total === 'Cannot divide by 0!') {
       total = null;
       const alert = document.createElement('div');
