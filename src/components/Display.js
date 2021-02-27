@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 const Display = ({ output, nxt, opr }) => (
-  <div className="display-window">
+  <div className="display-window" data-testid="div">
     {output}
     {opr === '%' ? '' : opr}
     {nxt}
