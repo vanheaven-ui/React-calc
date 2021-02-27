@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { render, screen } from '@testing-library/react';
+import { render, screen, cleanup } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import Display from '../../components/Display';
 import '@testing-library/jest-dom';
+
+afterEach(cleanup);
 
 test('is rendered without crashing', () => {
   const rootNode = document.createElement('div');
