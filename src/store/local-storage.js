@@ -16,7 +16,9 @@ const LS = (() => {
     localStorage.setItem('history', JSON.stringify(LSArray));
   };
 
-  return { LSArray, addHistory, getHistory };
+  return {
+    LSArray, addHistory, getHistory,
+  };
 })();
 
 export default LS;
