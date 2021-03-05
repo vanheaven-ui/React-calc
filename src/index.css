@@ -55,6 +55,10 @@ nav h2 {
   font-family: 'Orbitron', sans-serif;
 }
 
+.active {
+  background: linear-gradient(360deg, #f5913e 10%, transparent);
+}
+
 .links a:hover {
   background: linear-gradient(360deg, #f5913e 10%, transparent);
 }
@@ -231,7 +235,7 @@ blockquote span {
   margin-bottom: 5px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 575px) and (max-width: 768px) {
   .navbar {
     display: flex;
     flex-direction: column;
@@ -240,11 +244,12 @@ blockquote span {
 
   .calc-section {
     flex-direction: column;
+    align-items: center;
   }
 
   .calc {
     max-width: 700px;
-    min-width: 240px;
+    min-width: 100%;
   }
 
   .calc-history {
@@ -259,6 +264,21 @@ blockquote span {
 @media screen and (max-width: 575px) {
   .links {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calc-section {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .calc {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .navbar {
     flex-direction: column;
     align-items: center;
   }
